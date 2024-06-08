@@ -45,7 +45,7 @@ secret = [
 
 projects = [
   "<br>",
-  '<a href="https://github.com/Jossyboydgenius?tab=repositories" target="_blank">View my projects on GitHub</a>',
+  'Click here: <a class="command" href="https://github.com/Jossyboydgenius?tab=repositories" target="_blank">View my projects on GitHub</a>',
   "<br>"
 ];
 
