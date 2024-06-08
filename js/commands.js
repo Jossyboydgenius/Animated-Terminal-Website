@@ -1,12 +1,12 @@
-var youtube = "https://www.youtube.com/@tech_apostle";
-var twitter = "https://www.twitter.com/kiss_johzzy/";
-var password = "techapostle";
-var linkedin = "https://www.linkedin.com/in/awejosepholaitan/";
-var instagram = "https://www.instagram.com/tech_apostle/";
-var github = "https://github.com/jossyboydgenius/";
-var email = 'mailto:awejosepholaitan@gmail.com';
+export var youtube = "https://www.youtube.com/@tech_apostle";
+export var twitter = "https://www.twitter.com/kiss_johzzy/";
+export var password = "techapostle";
+export var linkedin = "https://www.linkedin.com/in/awejosepholaitan/";
+export var instagram = "https://www.instagram.com/tech_apostle/";
+export var github = "https://github.com/jossyboydgenius/";
+export var email = 'mailto:awejosepholaitan@gmail.com';
 
-whois = [
+export var whois = [
   "<br>",
   "Hey, I'm Awe Joseph also known as TECH APOSTLE!👋",
   "I'm a software engineer and cybersecurity specialist, known for",
@@ -21,13 +21,14 @@ whois = [
   "on a groundbreaking machine learning model, I'm all in for making a positive impact through technology.",
   "<br>"
 ];
-whoami = [
+
+export var whoami = [
   "<br>",
   "The paradox of “Who am I?” is: We never know, but, we constantly find out.",
   "<br>"
 ];
 
-social = [
+export var social = [
   "<br>",
   'youtube        <a href="' + youtube + '" target="_blank">youtube/@tech_apostle' + "</a>",
   'twitter        <a href="' + twitter + '" target="_blank">twitter/kiss_johzzy' + '</a>',
@@ -37,19 +38,19 @@ social = [
   "<br>"
 ];
 
-secret = [
+export var secret = [
   "<br>",
   '<span class="command">sudo</span>   Only use if you\'re admin',
   "<br>"
 ];
 
-projects = [
+export var projects = [
   "<br>",
   '<a href="https://github.com/Jossyboydgenius?tab=repositories" target="_blank">View my projects on GitHub</a>',
   "<br>"
 ];
 
-help = [
+export var help = [
   "<br>",
   '<span class="command">whois</span>          Who is TechApostle?',
   '<span class="command">whoami</span>         Who are you?',
@@ -65,7 +66,7 @@ help = [
   "<br>",
 ];
 
-banner = [
+export var banner = [
   '<span class="index">TechApostle Independent Entity. All rights reserved.</span>',
   '<span class="index">Awe Joseph Olaitan Interactive Terminal, enjoy your exploration!</span>',
   "<br>",
