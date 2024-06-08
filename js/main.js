@@ -1,8 +1,11 @@
+console.log('main.js loaded');
+
 var before = document.getElementById("before");
 var liner = document.getElementById("liner");
 var command = document.getElementById("typer");
 var textarea = document.getElementById("texter");
 var terminal = document.getElementById("terminal");
+
 console.log(before, liner, command, textarea, terminal); // Check if elements are selected
 
 var commandsList = ["help", "whois", "whoami", "video", "sudo", "social", "secret", "projects", "password", "history", "email", "clear", "banner", "youtube", "twitter", "linkedin", "instagram", "github"];
