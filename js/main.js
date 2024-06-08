@@ -1,9 +1,11 @@
+console.log('Main script loaded'); // Add this at the top of main.js to check if the script is loaded
 var before = document.getElementById("before");
 var liner = document.getElementById("liner");
 var command = document.getElementById("typer"); 
 var textarea = document.getElementById("texter"); 
 var terminal = document.getElementById("terminal");
 var commandsList = ["help", "whois", "whoami", "video", "sudo", "social", "secret", "projects", "password", "history", "email", "clear", "banner", "youtube", "twitter", "linkedin", "instagram", "github"];
+console.log(before, liner, command, textarea, terminal); // Add this to see if elements are correctly selected in the console
 
 var git = 0;
 var pw = false;
