@@ -12,8 +12,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "next": "^latest",
-    "react": "^latest",
-    "react-dom": "^latest"
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
   }
 }
