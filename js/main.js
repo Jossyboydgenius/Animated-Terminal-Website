@@ -1,15 +1,9 @@
-console.log('main.js loaded');
-
 var before = document.getElementById("before");
 var liner = document.getElementById("liner");
-var command = document.getElementById("typer");
-var textarea = document.getElementById("texter");
+var command = document.getElementById("typer"); 
+var textarea = document.getElementById("texter"); 
 var terminal = document.getElementById("terminal");
-
-console.log(before, liner, command, textarea, terminal); // Check if elements are selected
-
 var commandsList = ["help", "whois", "whoami", "video", "sudo", "social", "secret", "projects", "password", "history", "email", "clear", "banner", "youtube", "twitter", "linkedin", "instagram", "github"];
-console.log('Commands list:', commandsList);
 
 var git = 0;
 var pw = false;
@@ -17,7 +11,6 @@ let pwd = false;
 var commands = [];
 
 setTimeout(function() {
-  console.log('Displaying banner');
   loopLines(banner, "", 80);
   textarea.focus();
 }, 100);
@@ -30,12 +23,11 @@ console.log(
 );
 console.log("%cPassword: '" + password + "' - I wonder what it does?🤔", "color: grey");
 
-// Init
+//init
 textarea.value = "";
 command.innerHTML = textarea.value;
 
 function enterKey(e) {
-  console.log('Key pressed:', e.keyCode);
   if (e.keyCode == 181) {
     document.location.reload(true);
   }
@@ -93,6 +85,16 @@ if (e.keyCode == 40 && git < commands.length - 1) { // Down arrow key
       command.innerHTML = autocompleteCommand;
     }
   }
+    // Add this code to listen for the Tab key press event
+  if (e.keyCode == 9) {
+    e.preventDefault(); // Prevent the default action (tabbing to the next element)
+    var currentInput = textarea.value;
+    var autocompleteCommand = commandsList.find(cmd => cmd.startsWith(currentInput));
+    if (autocompleteCommand) {
+      textarea.value = autocompleteCommand;
+      command.innerHTML = autocompleteCommand;
+    }
+  }
     if (e.keyCode == 40 && git != commands.length) {
       git += 1;
       if (commands[git] === undefined) {
@@ -106,7 +108,6 @@ if (e.keyCode == 40 && git < commands.length - 1) { // Down arrow key
 }
 
 function commander(cmd) {
-  console.log('Command entered:', cmd);
   switch (cmd.toLowerCase()) {
     case "help":
       loopLines(help, "color2 margin", 80);
